@@ -106,7 +106,7 @@ I add some extra blocks in the `createBlocks` function to create the tree assets
 
 ### Procedural grass color
 I created two base grass colors in the lambert fragment shader. By getting the x and z position and using the `fbm()` noise function, I just mixed the colors in the biome to create differently colored grass. I am having some problem creating the biome-like distribution. Instead of showing it in the final version, we create a branch to show this feature. I have attached a screenshot below. 
-<img width="1229" alt="Screen Shot 2021-12-07 at 11 20 01 PM" src="https://user-images.githubusercontent.com/36288772/145231739-b1c5fe2d-9e9b-4594-8c2c-bead7e5e1d37.png">
+<img width="1229" alt="Screen Shot 2021-12-07 at 11 20 01 PM" src="sample.png">
 
 ### Post-process Camera Overlay
 In the post fragment shader, I applied a wave-like screen distortion and coloration. I distort the `uv` as a function of time. I was trying to add some 2D noise, but there are some line errors on the boundary of the shader. Instead, I use the cos and sin function to animate the noise in order to distort the player’s view under water and lava. 
